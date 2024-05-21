@@ -28,11 +28,11 @@ import Route from '@ioc:Adonis/Core/Route'
 // ----------------------------------------------
 Route.group(() => {
   Route.get('/', 'CoreController.index')
+  Route.get('about', 'CoreController.about')
   Route.get('contact', 'CoreController.contact')
   Route.get('contribute', 'CoreController.contribute')
   Route.get('contributors', 'CoreController.contributors')
   Route.get('projects', 'CoreController.projects')
-  Route.get('paxo-ide', 'CoreController.paxoIde')
   Route.get('press', 'PressController.index')
 
   Route.get('tedx', 'RedirectionsController.tedx')
